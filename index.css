@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'JetBrains Mono', monospace;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   min-height: 100vh;
+   margin: 0;
+   background-color: #6D3550;
+background-image: linear-gradient(315deg, #724766 0%, #64425A 74%);
+   
+}
+.container{
+    background-color: rgb(35, 37, 36);
+    border-radius: 5px;
+    max-width: 100%;
+    overflow: hidden;
+    width: 400px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.header{
+    background-color: #232524;
+    border-bottom: 1px solid #f0f0f0;
+    padding: 20px 40px;
+}
+.header h2{
+    margin: 0;
+    color: #EAE5DD;
+}
+.form{
+    padding: 30px 40px;
+    color: #EAE5DD;
+    
+}
+
+.form-control{
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    position: relative;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+.form-control input{
+    border: 2px solid #1E2020;
+    border-radius: 4px;
+    display: block;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    color: black;
+
+}
+.form-control input:focus {
+	outline: 0;
+	border-color: #777;
+}
+
+.form-control i{
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+}
+.form-control small{
+    visibility: hidden;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.form-control.success input{
+    border-color: #2ecc71;
+}
+.form-control.danger input{
+    border-color: #e74c3c;
+}
+.form-control.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.form-control.danger i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+.form-control.form-control.danger small {
+	visibility: visible;
+}
+.form button{
+    background-color: #7A435A;
+    border: 2px solid #ce7ba1d3;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+.form-control.danger small {
+    visibility: visible;
+    
+}
+
